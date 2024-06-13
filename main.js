@@ -1,16 +1,17 @@
 gsap.registerPlugin(ScrollTrigger)
-const tl=gsap.timeline()
+const tl=gsap.timeline({repeat:-1,yoyo:true})
 const cuadro1=document.getElementsByClassName("cuadro1")
 const cuadro2=document.getElementsByClassName("cuadro2")
 tl.to(cuadro1,{
     duration: 1,
     rotate:360,
-    x:300,
-    repeat:-1,
-    yoyo:true
+    x:300
 })
-tl.from(cuadro2,{duration: 1,rotate:-360, x:-300,repeat:-1,
-    yoyo:true})
+tl.from(cuadro2,{
+    duration: 1,
+    rotate:-360, 
+    x:-300,
+})
 gsap.to(".cuadrop2",{
     scrollTrigger:{
         trigger:".panel2",
