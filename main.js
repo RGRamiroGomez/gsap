@@ -1,0 +1,5 @@
+const tl=gsap.timeline()
+const cuadro1=document.getElementsByClassName("cuadro1")
+const cuadro2=document.getElementsByClassName("cuadro2")
+tl.to(cuadro1,{duration: 1,rotate:360, x:300})
+tl.from(cuadro2,{duration: 1,rotate:-360, x:-300})
