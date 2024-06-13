@@ -5,12 +5,14 @@ const cuadro2=document.getElementsByClassName("cuadro2")
 tl.to(cuadro1,{
     duration: 1,
     rotate:360,
-    x:300
+    x:300,
+    ease:"back"
 })
 tl.from(cuadro2,{
     duration: 1,
     rotate:-360, 
     x:-300,
+    ease:"back"
 })
 gsap.to(".cuadrop2",{
     scrollTrigger:{
